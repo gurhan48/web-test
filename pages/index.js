@@ -14,7 +14,6 @@ export default function Home() {
 
       <section className="hero">
         <h1>Gürhan Savaş Akdağ</h1>
-        <h1>05421406313</h1>
         <p className="lead">13 yaşındayım — Kodlama ve kısa yazılar</p>
       </section>
 
