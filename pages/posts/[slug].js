@@ -24,7 +24,7 @@ export default function PostPage({ post }) {
       <article className="post">
         <h1>{post.title}</h1>
         <p className="meta">{post.date} • {post.author}</p>
-        <div className="content">{post.content}</div>
+        <div className="content" dangerouslySetInnerHTML={{ __html: post.content }} />
       </article>
     </Layout>
   )
