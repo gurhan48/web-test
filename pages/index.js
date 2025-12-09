@@ -1,28 +1,26 @@
+
+
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout from '../components/Layout'
-import PostCard from '../components/PostCard'
-import posts from '../data/posts'
 
 export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Gürhan Savaş Akdağ - Blog</title>
-        <meta name="description" content="Basit Next.js blog sitesi" />
+        <title>Basketball Technicals</title>
+        <meta name="description" content="Basketbol teknikleri, kuralları, taktikleri ve pozisyonları" />
       </Head>
-
-      <section className="hero">
-        <h1>Gürhan Savaş Akdağ</h1>
-        <p className="lead">13 yaşındayım — Kodlama ve kısa yazılar</p>
-      </section>
-
-      <section className="posts">
-        {posts.map((p) => (
-          <Link key={p.slug} href={`/posts/${p.slug}`}>
-            <PostCard post={p} />
-          </Link>
-        ))}
+      <section style={{textAlign:'center',marginTop:'48px',marginBottom:'48px'}}>
+        <h1 style={{fontSize:'2.8rem',fontWeight:'bold',color:'#f7b32b',letterSpacing:'2px',marginBottom:'18px'}}>Basketball Technicals</h1>
+        <p style={{fontSize:'1.3rem',color:'#b2b8c6',maxWidth:'600px',margin:'0 auto 32px'}}>
+          Basketbolun tüm teknikleri, kuralları, taktikleri ve oyuncu pozisyonları Her seviyeden basketbolcu için rehber.
+        </p>
+        <div style={{display:'flex',justifyContent:'center',gap:'32px',flexWrap:'wrap',marginTop:'32px'}}>
+          <a href="/kurallar" style={{background:'#232a3d',color:'#f7b32b',padding:'24px 38px',borderRadius:'18px',fontSize:'1.2rem',fontWeight:'bold',boxShadow:'0 4px 24px rgba(0,0,0,0.12)',textDecoration:'none',transition:'0.2s'}}>Kurallar</a>
+          <a href="/teknikler" style={{background:'#232a3d',color:'#f7b32b',padding:'24px 38px',borderRadius:'18px',fontSize:'1.2rem',fontWeight:'bold',boxShadow:'0 4px 24px rgba(0,0,0,0.12)',textDecoration:'none',transition:'0.2s'}}>Teknikler</a>
+          <a href="/taktikler" style={{background:'#232a3d',color:'#f7b32b',padding:'24px 38px',borderRadius:'18px',fontSize:'1.2rem',fontWeight:'bold',boxShadow:'0 4px 24px rgba(0,0,0,0.12)',textDecoration:'none',transition:'0.2s'}}>Taktikler</a>
+          <a href="/pozisyonlar" style={{background:'#232a3d',color:'#f7b32b',padding:'24px 38px',borderRadius:'18px',fontSize:'1.2rem',fontWeight:'bold',boxShadow:'0 4px 24px rgba(0,0,0,0.12)',textDecoration:'none',transition:'0.2s'}}>Pozisyonlar</a>
+        </div>
       </section>
     </Layout>
   )
