@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         <nav className="container" style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'24px 0'}}>
           <div style={{display:'flex',alignItems:'center',gap:'18px'}}>
             <Link href="/" style={{display:'flex',alignItems:'center',textDecoration:'none',gap:'12px'}}>
-              <img src="/basketball.jpg" alt="Basketball Technicals Logo" style={{height:'48px',width:'48px',objectFit:'cover',borderRadius:'12px',boxShadow:'0 2px 12px rgba(0,0,0,0.12)',background:'#fff'}} />
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=200&q=80" alt="Basketball Technicals Logo" style={{height:'48px',width:'48px',objectFit:'cover',borderRadius:'12px',boxShadow:'0 2px 12px rgba(0,0,0,0.12)',background:'#fff'}} />
               <span style={{fontWeight:'bold',fontSize:'2rem',color:'#f7b32b',letterSpacing:'2px',fontFamily:'inherit'}}>Basketball Technicals</span>
             </Link>
           </div>

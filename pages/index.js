@@ -11,6 +11,18 @@ export default function Home() {
         <meta name="description" content="Basketbol teknikleri, kuralları, taktikleri ve pozisyonları" />
       </Head>
       <section style={{textAlign:'center',marginTop:'48px',marginBottom:'48px'}}>
+        <div style={{display:'flex',justifyContent:'center',marginBottom:'32px'}}>
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/bSwg_p_wzuA"
+            title="Basketbol Teknikleri Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{borderRadius:'18px',boxShadow:'0 4px 32px rgba(0,0,0,0.18)'}}
+          ></iframe>
+        </div>
         <h1 style={{fontSize:'2.8rem',fontWeight:'bold',color:'#f7b32b',letterSpacing:'2px',marginBottom:'18px'}}>Basketball Technicals</h1>
         <p style={{fontSize:'1.3rem',color:'#b2b8c6',maxWidth:'600px',margin:'0 auto 32px'}}>
           Basketbolun tüm teknikleri, kuralları, taktikleri ve oyuncu pozisyonları Her seviyeden basketbolcu için rehber.
